@@ -14,7 +14,7 @@ export default function BtnCategorie() {
           }} >
         <AfficheCategorie boolCategorieSearch={boolCategorieSearch} choiseCategoriesSearch={choiseCategoriesSearch} />
         <span className='text-center ' >Catégories</span>
-        <img src={arrow} alt="" />
+        <img src={arrow} alt="fleches verte qui pointe vers le bas " />
         </div>
     </div>
   )
