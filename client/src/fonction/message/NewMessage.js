@@ -13,7 +13,7 @@ export default function NewMessage (token,setmessageErreur,valueMsgForm,id,confi
           .then((res) => {
             paraMessageErreur.current.style.color = "#44ADA8";
             setcurrentPage(1);
-            setMessage([res.data,...message]);
+            setMessage([...message,res.data]);
             setmessageErreur("message Créé.");
             setvalueMsgForm("");
           })

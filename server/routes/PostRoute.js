@@ -54,7 +54,7 @@ router.post("/creerPost",auth,async(req,res)=>{
 router.get("/",async(req,res)=>{
     try {
         // const post =await Post.find();
-        const post = await Post.find ().sort ( {createdAt: -1} );
+        const post = await Post.find ().sort ( {createdAt: 1} );
         res.json(post);
         
     } catch (error) {

@@ -25,14 +25,14 @@ export default function UseTrieMsg(setMessage,message) {
   const trieDate=()=>{
     if(croissantDate===false){
       const trie = [...message]
-      trie.sort((a, b) => new Date(b.dateCreation) - new Date(a.dateCreation));
+      trie.sort((a, b) => new Date(a.dateCreation) - new Date(b.dateCreation));
       setMessage([...trie]);
       setcroissantDate(true);
       setcroissantAuteur(false);
     }
     if(croissantDate===true){
       const trie = [...message]
-      trie.sort((a, b) => new Date(a.dateCreation) - new Date(b.dateCreation));
+      trie.sort((a, b) => new Date(b.dateCreation) - new Date(a.dateCreation));
       setMessage([...trie]);
       setcroissantDate(false);
       setcroissantAuteur(false);

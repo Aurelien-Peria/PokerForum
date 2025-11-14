@@ -15,7 +15,7 @@ export default async function newPost (errorMsgPost,token,seterrorMsgCreerPost,c
       .then((res) => {
         const trie = [...listePost]
         trie.sort((a, b) => new Date(b.dateCreation) - new Date(a.dateCreation));
-        const trieDeux = [res.data,...trie]
+        const trieDeux = [...trie,res.data]
         setlistePost([...trieDeux]);
         errorMsgPost.current.style.color = "#44ADA8";
         resetAllRadio();

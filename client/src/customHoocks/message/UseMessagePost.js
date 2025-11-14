@@ -36,18 +36,19 @@ export default function UseMessagePost(config,id){
           setSpin(false);
         });
     }
-
-    const loadPost = setTimeout(() => {
-      lePoste();
-    }, 300);  
+    lePoste();
+    message();
+    // const loadPost = setTimeout(() => {
+    //   lePoste();
+    // }, 300);  
     
-    const loadMsg = setTimeout(() => {
-       message();
-    }, 300);
+    // const loadMsg = setTimeout(() => {
+    //    message();
+    // }, 300);
 
     return ()=>{
-      clearTimeout(loadPost);
-      clearTimeout(loadMsg);
+      // clearTimeout(loadPost);
+      // clearTimeout(loadMsg);
     }
 
   }, [config,id,setSpin])

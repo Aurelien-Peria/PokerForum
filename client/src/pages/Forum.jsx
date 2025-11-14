@@ -37,10 +37,10 @@ export default function Forum({config}) {
             <Spinner/>
           :
             <div className="sup480:pt-[110px] sup768:pt-[140px] sup1024:pt-[175px] sup1600:pt-[200px] w-[95%] pt-[80px] pb-[20px] my-0 mx-auto ">
-              <TitreForum/>
+              {/* <TitreForum/> */}
               <RechercheParCategorie/>
               <ErroMsgCategorie/>
-              <TitrePost listePost={listePost} />
+              {/* <TitrePost listePost={listePost} /> */}
               <AfficherAllPost/>
               <CreerPost config={config}/>
             </div>
