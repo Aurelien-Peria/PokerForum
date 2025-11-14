@@ -7,12 +7,12 @@ import { useState } from "react";
 export default function UseNbPagePost(){
     const {listePost}=useContext(ListePostContext);
     const {currentPage,setcurrentPage}=useContext(PagePostContext);
+    //nombre de post par page
     const [postPerPage, setpostPerPage] = useState(4);
     const indexOfLastPost =currentPage * postPerPage;
     const indexOfFirstPost = indexOfLastPost-postPerPage;
     const currentPosts = listePost.slice(indexOfFirstPost,indexOfLastPost);
     const nbPage = Math.ceil(listePost.length/postPerPage);
-    
 
     return {currentPosts,currentPage,setcurrentPage,nbPage};
 }
