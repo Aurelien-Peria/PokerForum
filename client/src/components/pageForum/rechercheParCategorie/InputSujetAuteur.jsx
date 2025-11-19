@@ -6,7 +6,7 @@ export default function InputSujetAuteur({inputsearchSujetAuteur,recherchePost,s
         <input className='sup480:text-[13px] sup768:text-[14px] sup1024:text-[15px] sup1600:text-[19px] w-full pl-[6px] outline-none text-vertFoncer text-[10px]'
         ref={inputsearchSujetAuteur} 
         value={recherchePost} 
-        type="text" placeholder="Rechercher Sujet"
+        type="text" placeholder="Recherche sujet"
         onChange={(e) => {setrecherchePost(e.target.value);}}
         onClick={()=>seterrorMsgCategorie("")} 
         name='rechercheCategorie'

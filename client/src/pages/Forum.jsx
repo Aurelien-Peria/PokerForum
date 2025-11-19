@@ -36,8 +36,8 @@ export default function Forum({config}) {
           spin ? 
             <Spinner/>
           :
-            <div className="sup480:pt-[110px] sup768:pt-[140px] sup1024:pt-[175px] sup1600:pt-[200px] w-[95%] pt-[80px] pb-[20px] my-0 mx-auto ">
-              {/* <TitreForum/> */}
+            <div className="sup480:pt-[90px] sup768:pt-[100px] sup1024:pt-[110px] sup1600:pt-[120px] w-[95%] pt-[60px] pb-[20px] my-0 mx-auto ">
+              <TitreForum/>
               <RechercheParCategorie/>
               <ErroMsgCategorie/>
               {/* <TitrePost listePost={listePost} /> */}
