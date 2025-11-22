@@ -6,7 +6,7 @@ export default function BtnRetourMsg({message}) {
         {message<=0?
         "" 
         : 
-        <div className='sup480:mb-[50px] sup768:mb-[70px] sup1024:mb-[90px] sup1600:mb-[110px] mb-[30px] w-full flex justify-center'>
+        <div className=' sup768:mb-[35px] mb-[20px] w-full flex justify-center'>
             <button onClick={()=>{
             document.querySelector(".allMsgs").scrollIntoView({ behavior: 'smooth'});
             }} 

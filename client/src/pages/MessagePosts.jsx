@@ -25,9 +25,9 @@ export default function MessagePosts() {
         spin ? 
         <Spinner/>
           :
-        <div className="sup480:pt-[110px] sup768:pt-[150px] sup1024:pt-[170px] sup1600:pt-[190px] pt-[90px] w-[100%] max-w-[1800px] mx-auto my-0 ">
+        <div className="sup480:pt-[90px] sup768:pt-[100px] sup1024:pt-[110px] sup1600:pt-[120px] pt-[60px] w-[100%] max-w-[1800px] mx-auto my-0 ">
           <AfficheLePost listePost={post}/>
-          <BtnAccesCreerMsg/>
+          <BtnAccesCreerMsg message={message}/>
           <AfficheMessage message={message} setMessage={setMessage} titrecontenu={titrecontenu} />
           <BtnRetourMsg message={message} />
           <CreerMessage valueMsgForm={valueMsgForm} setvalueMsgForm={setvalueMsgForm}  paraMessageErreur={paraMessageErreur} setmessageErreur={setmessageErreur} 
