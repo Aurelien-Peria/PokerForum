@@ -13,10 +13,24 @@ export default function NavUserDeconnecter() {
             <Link  to={""} className="sup480:text-[14px] sup768:text-[17px] sup1024:text-[23px] sup1600:text-[30px] text-[10px] text-blanc outline-none no-underline transition-transform ease-in-out duration-300 hover:scale-90 hover:opacity-60 hover:cursor-pointer">
             Forum{" "}
             </Link>
-            <Link  onClick={()=>clickInscription(setSignUp,setSignIn,signUp,errMsgNav,seterrMsgNav)} className="sup480:text-[14px] sup768:text-[17px] sup1024:text-[23px] sup1600:text-[30px] text-[10px] text-blanc outline-none no-underline transition-transform ease-in-out duration-300 hover:scale-90 hover:opacity-60 hover:cursor-pointer">
+            <Link  onClick={()=>{
+                clickInscription(setSignUp,setSignIn,signUp,errMsgNav,seterrMsgNav);
+                if(signUp===false){
+                    document.querySelector(".titreUn").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }
+            }} className="sup480:text-[14px] sup768:text-[17px] sup1024:text-[23px] sup1600:text-[30px] text-[10px] text-blanc outline-none no-underline transition-transform ease-in-out duration-300 hover:scale-90 hover:opacity-60 hover:cursor-pointer">
             Inscription{" "}
             </Link>
-            <Link onClick={()=>clickConnexion(setSignUp,setSignIn,signIn,errMsgNav,seterrMsgNav)} className="sup480:text-[14px] sup768:text-[17px] sup1024:text-[23px] sup1600:text-[30px] text-[10px] text-blanc outline-none no-underline transition-transform ease-in-out duration-300 hover:scale-90 hover:opacity-60 hover:cursor-pointer">
+            <Link onClick={()=>{
+              clickConnexion(setSignUp,setSignIn,signIn,errMsgNav,seterrMsgNav)
+              if(signIn===false){
+                    document.querySelector(".titreUn").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }
+            }} className="sup480:text-[14px] sup768:text-[17px] sup1024:text-[23px] sup1600:text-[30px] text-[10px] text-blanc outline-none no-underline transition-transform ease-in-out duration-300 hover:scale-90 hover:opacity-60 hover:cursor-pointer">
             Connexion{" "}
             </Link>
         </nav>
