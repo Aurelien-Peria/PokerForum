@@ -12,6 +12,7 @@
 }
 
 
+
 .VisibleContenu::-webkit-scrollbar {
   width: 12px;
 }
@@ -33,11 +34,14 @@
   
 }
 
-
 .VisibleContenuDeux::-webkit-scrollbar-thumb {
   background-color: white;  
   border: solid #405B63 2px;
   border-radius: 10px;
+}
+
+.VisibleContenu::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
 }
 
 
